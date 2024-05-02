@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEAST FITNESS</title>
+</head>
+<link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+<style>
+    body {
+        font-family: "Playball", cursive;
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/BG1.jpg');
+        background-size: cover;
+    }
+
+    .left {
+        position: absolute;
+        top: 16px;
+        left: 113px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        width: 120px;
+    }
+
+    .trainer {
+        position: absolute;
+        top: 1650px;
+        left: 50px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .trainer img {
+        width: 1400px;
+        border-radius: 0px;
+    }
+
+    .yoga {
+        position: absolute;
+        top: 890px;
+        left: -614px;
+        display: inline-flex;
+        /* border: 2px solid red; */
+    }
+
+    .yoga img {
+        width: 1523px;
+        border-radius: 0px;
+        border-color: #f6f0f0;
+        order: 1;
+    }
+
+    .yogatxt {
+        position: relative;
+        color: black;
+        left: -66%;
+        order: 2;
+        font-size: 30px;
+    }
+
+    .yogatextbox {
+        display: inline-block;
+        border: 2px solid white;
+        position: relative;
+        top: 109px;
+        width: 606px;
+        height: 436px;
+        left: 1463px;
+        /* border-radius: 141px; */
+        background-color: #86f1ff82;
+    }
+
+    .yogatext-edit {
+        text-align: left;
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+    }
+
+    .limbs {
+        position: absolute;
+        top: 1781px;
+        left: 32px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .limbs img {
+        width: 1457px;
+        border-radius: 0px;
+        border: 2px solid #f6f0f0;
+        height: 709px;
+    }
+
+    .health {
+        position: absolute;
+        top: 7132px;
+        left: 34px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .health img {
+        width: 1464px;
+        border-radius: 0px;
+        height: 720px;
+    }
+    .healthbox {
+    display: inline-block;
+    border: 2px solid white;
+    position: relative;
+    top: -665px;
+    width: 1239px;
+    height: 597px;
+    right: -107px;
+    border-radius: 45px;
+    background-color: #fac87c78;
+}
+.healthtext{
+    text-align: left;
+    font-size: 25px;
+    color: #000000;
+    
+}
+    .machine {
+        position: absolute;
+        top: 3505px;
+        left: 50px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .machine img {
+        width: 1400px;
+        border-radius: 0px;
+    }
+
+    .suryanamaskar {
+        position: absolute;
+        top: 2535px;
+        left: 32px;
+        display: inline-block;
+        background-color: #70222f;
+        width: 1460px;
+        height: 710px;
+
+        /* border: 2px solid red; */
+    }
+
+    .suryanamaskar img {
+        width: 800PX;
+        border-radius: 65px;
+        height: 653px;
+        position: relative;
+        left: 17px;
+        top: -282px;
+    }
+
+    .suryatextbox {
+    display: inline-block;
+    border: 2px solid white;
+    position: relative;
+    top: 8px;
+    width: 622px;
+    /* height: 612px; */
+    right: -28px;
+    /* border-radius: 82px; */
+    background-color: #b1e8d6;
+}
+
+    .suryatext-edit {
+        text-align: left;
+        font-size: 25px;
+        color: #626060;
+    }
+
+    .ashtanga_1 {
+        position: absolute;
+        top: 4450px;
+        left: 50px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .ashtanga_edit {
+        /* border: 2px solid #9a0707; */
+        background-color: #e3f2fd;
+    }
+
+    .ashtanga_1 img {
+
+        /* width: 900px; */
+        height: 800px;
+        width: 1140px;
+        padding: 10px 100px 10px 50px;
+        border-radius: 0px;
+    }
+
+    .benefitsofyoga {
+        position: absolute;
+        top: 3290px;
+        left: 32px;
+        display: inline-block;
+        background-color: #acf8ff;
+        width: 1460px;
+        height: 710px;
+
+    }
+
+    .benefitsofyoga img {
+        width: 800PX;
+        border-radius: 65px;
+        height: 653px;
+        position: relative;
+        left: 14%;
+        top: 37px;
+        border: 1px solid #000000;
+    }
+
+    .somefamousyoga {
+        position: absolute;
+        top: 4052px;
+        left: 32px;
+        display: inline;
+        background-color: #ecc0c0;
+        width: 1460px;
+        height: 710px;
+    }
+
+    .Bhujangasana img {
+        width: 300PX;
+        border-radius: 65px;
+        height: 300px;
+        position: relative;
+        left: 14%;
+        top: 37px;
+        border: 1px solid #000000;
+    }
+
+    .VINYASA img {
+        width: 550PX;
+        border-radius: 65px;
+        height: 300px;
+        position: relative;
+        left: 39%;
+        top: -422px;
+        border: 1px solid #000000;
+    }
+
+    .uttanasana img {
+        width: 300PX;
+        border-radius: 65px;
+        height: 300px;
+        position: relative;
+        left: 14%;
+        top: 37px;
+        border: 1px solid #000000;
+    }
+
+    .text {
+        width: 49PX;
+        border-radius: 65px;
+        height: 287px;
+        position: relative;
+        right: -2%;
+        top: -736px;
+        color: red;
+        /* border: 1px solid #000000; */
+        font-size: 29px;
+    }
+
+    .exercisebox {
+        position: absolute;
+        top: 4812px;
+        left: 36px;
+        display: inline;
+        background-color: #cef7f9;
+        width: 1460px;
+        height: 709px;
+    }
+
+    .exercisebox img {
+        position: relative;
+        top: -165px;
+        left: 81px;
+        border-radius: 37%;
+    }
+
+    .exercise {
+        display: inline-block;
+        border: 2px solid white;
+        position: relative;
+        top: 19px;
+        width: 907px;
+        height: 667px;
+        right: -158px;
+        /* border-radius: 82px; */
+        background-color: #fac87c;
+    }
+
+    .exercisetext-edit {
+        text-align: left;
+        font-size: 25px;
+        color: #616060;
+    }
+
+    .exercisetext-edit h3 {
+        color: #f70000;
+    }
+
+    .exercisetext-edit h5 {
+        color: black;
+    }
+
+    .EIB {
+        position: absolute;
+        top: 5570px;
+        left: 36px;
+        display: flex;
+        flex-direction: row;
+        background-color: #cef7f9;
+        width: 1460px;
+        height: 709px;
+    }
+
+    .exerciseimg1 img {
+        height: 100%;
+        width: 150%;
+
+    }
+
+    .exerciseimg2 img {
+        height: 708px;
+        width: 721px;
+        position: relative;
+        top: 0%;
+        left: 38%;
+    }
+
+    .EIB2 {
+        position: absolute;
+        top: 6355px;
+        left: 36px;
+        display: flex;
+        flex-direction: row;
+        background-color: #cef7f9;
+        width: 1460px;
+        height: 709px;
+    }
+    .healthconsultant{
+        position: absolute;
+        top: 7919px;
+        left: 36px;
+        display: flex;
+        flex-direction: row;
+        background-color: #cef7f9;
+        width: 1460px;
+        height: 709px;
+    }
+    .healthconsultant img{
+        position: relative;
+    top: 101px;
+    left: 81px;
+    border-radius: 37%;
+    }
+    .healthconsultanttext {
+    display: inline-block;
+    border: 2px solid white;
+    position: relative;
+    top: 19px;
+    width: 663px;
+    height: 667px;
+    right: -158px;
+    border-radius: 45px;
+    background-color: #fac87c;
+}
+.healthconsultanttxt{
+    text-align: left;
+    font-size: 25px;
+    color: #626060;
+}
+.suppliment {
+        position: absolute;
+        top: 8705px;
+        left: 34px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .suppliment img {
+        width: 1464px;
+        border-radius: 0px;
+        height: 720px;
+    }
+    .supplimentbox {
+    display: inline-block;
+    border: 2px solid white;
+    position: relative;
+    top: -702px;
+    width: 1115px;
+    height: 60px;
+    right: -59px;
+    border-radius: 82px;
+    background-color: #fac87c78;
+}
+.supplimenttext{
+    text-align: left;
+    font-size: 25px;
+    color: #000000;
+    
+}
+    .mid {
+        margin: 20px auto;
+        display: block;
+        width: 40%;
+        /* border: 2px solid red; */
+    }
+
+    .right {
+        position: fixed;
+        top: 40px;
+        right: 10px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .btn {
+        font-family: "Playball", cursive;
+        /* margin: 50px 50px; */
+        background-color: #d45358;
+        color: rgb(244, 248, 251);
+        padding: 2px 6px;
+        border: 2px solid #70222f;
+        border-radius: 12px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .btn3 {
+        font-family: "playball", cursive;
+        /* margin: 50px 50px; */
+        background-color: #9a0707;
+        color: rgb(244, 248, 251);
+        padding: 2px 6px;
+        border: 3px solid #8b1c1c;
+        border-radius: 12px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: #8b1c1c;
+    }
+
+    .btn3:hover {
+        background-color: #8b1c1c;
+    }
+
+   /*  .navbar {
+        display: inline-block;
+        position: fixed;
+        top: 18px;
+        background-color: #229795;
+        border-radius: 45px;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 19px;
+    }
+
+
+    .navbar li a {
+        text-decoration: none;
+        color: white;
+        padding: 31px 7px;
+
+    } */
+
+   /*  .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(67 76 81);
+        padding: 35px 25px;
+    }
+ */
+    .container {
+        border: 2px solid rgb(251, 255, 251);
+        margin: 179px 115px;
+        width: 472px;
+        border-radius: 19px;
+        padding: 13px 55px;
+    }
+
+    /* .container10 {
+        background-color: aquamarine;
+        border: 2px solid rgb(27, 218, 27);
+        margin: 128px 12px;
+        width: 100%;
+        border-radius: 19px;
+        padding: 13px 55px;
+    } */
+    /* .machinary {
+        position: absolute;
+        top: 4000px;
+        left: 150px;
+        display: inline;
+    } */
+    .form-group input {
+        width: 350px;
+        display: block;
+        text-align: center;
+        font-family: "Playball", cursive;
+        margin: 23px auto;
+        background-color: #f9f5f5;
+        /* color: rgb(234, 63, 63); */
+        padding: 0px 50px;
+        border: 2px solid #4c0505;
+        border-radius: 9px;
+        font-size: 20px;
+    }
+
+    /* .form-group-input1 {
+        width: 190px;
+        display: block;
+        text-align: center;
+        font-family: "Playball", cursive;
+        margin: 23px auto;
+        background-color: #f9f5f5;
+        color: rgb(234, 63, 63);
+        padding: 0px 50px;
+        border: 2px solid #4c0505;
+        border-radius: 9px;
+        font-size: 20px;
+    } */
+
+    .container h1 {
+        text-align: center;
+    }
+
+
+    .container button {
+        display: block;
+        width: 65%;
+        margin: 1px 55px;
+    }
+
+    .search {
+        float: right;
+        color: white;
+        padding: 0px 14px;
+    }
+
+    .navbar input {
+        border: 2px solid black;
+        border-radius: 90px;
+        padding: 0px 8px;
+        width: 129px;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- </div class="machinary">
+    <div class="form-group-input1">
+
+    </div>
+    <h3>Equipments</h3>
+    <em>1. kvjkvndkfdf</em>
+    <div> -->
+        <!--  left box for logo -->
+        <div class="left">
+            <img src="img/LOGO.jpg" alt="">
+            <div>FITNESS &#160; HUB</div>
+        </div>
+        <!-- <div class="trainer ">
+            <img src="img/TRAINER.jpg" alt=""> -->
+        <!-- <div>Personal &#160; Trainer</div> -->
+        <!-- </div> -->
+        <div class="yoga">
+            <img src="img/YOGA.jpg" alt="">
+            <div class="yogatxt">
+                <h1>Yoga</h1>
+            </div>
+            <div class="yogatextbox">
+                <ul class="yogatext-edit">
+                    <h3>Key&nbsp; benefits&nbsp; of &nbsp; Yoga</h3>
+                    <li>Improves Flexibility</li>
+                    <li>Strength Building</li>
+                    <li>Stress Reduction</li>
+                    <li>Improve posture by strengthening core muscles and increasing body awareness</li>
+                    <li>Improve balance and coordination through various standing and balancing poses</li>
+                    <li>Help reduce chronic pain</li>
+                    <li> Improve mental clarity, focus, and concentration.</li>
+                </ul>
+            </div>
+
+            <!-- <div>Yoga &#160; Instructor</div> -->
+        </div>
+        <div class="limbs">
+            <img src="img/8-Limbs-Of-Yoga-Handouts.jpg" alt="">
+
+            <!-- <div>Yoga &#160; Instructor</div> -->
+        </div>
+
+        <div class="health">
+            <img src="img/HEALTH.jpg" alt="">
+            <!-- <div>Diet &#160;Plan</div> -->
+            <div class="healthbox">
+                <ul class="healthtext">
+                    <h3>Welcome to our Diet plan Section &nbsp;!</h3>
+                    <h5></h5>
+                    <li><b>Weight Loss Plan: </b>A personalized plan designed to help you achieve your weight loss goals through a balanced diet and healthy eating habits.</li>
+                    <li><b>Muscle Gain Plan: </b>A diet plan focused on increasing muscle mass and strength through a combination of protein-rich foods and strength training.</li>
+                    <li><b>Healthy Eating Plan: </b>A general plan that emphasizes balanced meals, portion control, and incorporating a variety of nutritious foods into your diet.</li>
+                    <li><b>Vegetarian or Vegan Plan:</b>A diet plan tailored to those who follow a vegetarian or vegan lifestyle, ensuring they meet their nutritional needs without animal products.</li>
+                    <li><b>Gluten-Free or Dairy-Free Plan: </b> A plan that eliminates gluten or dairy products for those with specific dietary restrictions or sensitivities.</li>
+                    <li><b>Medical Condition-Specific Plans: </b>Plans designed to manage specific medical conditions such as diabetes, high blood pressure, or heart disease through diet modification.</li>
+                    <li><b>Sports Nutrition Plan: </b>A plan designed for athletes or active individuals to optimize their performance and recovery through proper nutrition.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="machine "> -->
+        <!-- <h3>Machine Instuments</h3>  -->
+        <!-- <img src="img/MACHINE.jpg" alt=""> -->
+        <!-- <div>Machine &#160;Instument</div> -->
+        <!-- </div> -->
+        <!-- <div class="ashtanga_1 ">
+            
+           <div class="ashtanga_edit">
+            1. Ashtanga Yoga
+                <img src="img/ASHTANGA_1.jpg" alt=""> -->
+        <!-- <div>Machine &#160;Instument</div> -->
+
+        <!--      </div>
+        </div> -->
+        <div class="suryanamaskar ">
+            <!--  <h1>Surya Namaskar</h1> -->
+            <img src="img/SN.jpg" alt="">
+            <!-- <div>Machine &#160;Instument</div> -->
+            <div class="suryatextbox">
+                <ul class="suryatext-edit">
+                    <h4>Surya Namaskar, also known as Sun Salutation, is a popular sequence of yoga poses that offers a
+                        complete body workout. Here's a short description in points:</h4>
+                    <li>1. Surya Namaskar is a series of 12 yoga poses performed in a flowing sequence.</li>
+                    <li>2. Each pose is coordinated with the breath, promoting mindfulness and concentration.</li>
+                    <li>3. It stretches and tones the muscles, improves flexibility, and enhances overall body strength.
+                    </li>
+                    <li>4. Surya Namaskar benefits the cardiovascular system, boosts metabolism, and aids in weight loss.
+                    </li>
+                    <li>5. Regular practice can improve posture, balance, and mental clarity.</li>
+                    <li>6. this is text for suryanamaskarSurya Namaskar is suitable for all fitness levels and can be
+                        modified to suit individual needs.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="benefitsofyoga ">
+
+            <div class="benefits of yoga_edit">
+                <img src="img/BENEFITS OF YOGA.jpg" alt="">
+                <!-- <div>Machine &#160;Instument</div> -->
+
+            </div>
+        </div>
+        <div class="somefamousyoga">
+
+            <div class="uttanasana">
+                <img src="img/uttanasana.avif" alt="">
+                <!-- <div>Machine &#160;Instument</div> -->
+            </div>
+            <div class="Bhujangasana">
+                <img src="img/Bhujangasana.avif" alt="">
+                <!-- <div>Machine &#160;Instument</div>  -->
+            </div>
+            <div class="VINYASA">
+                <img src="img/VINYASA_2.jpg" alt="">
+                <!-- <div>Machine &#160;Instument</div> -->
+            </div>
+            <div class="text">Uttanasana</div>
+            <div class="text">Bhujangasana</div>
+        </div>
+        <div class="exercisebox">
+            <img src="img/depositphotos_125122314-stock-illustration-handsome-man-lifting-a-barbell.jpg" alt="">
+            <div class="exercise">
+                <ul class="exercisetext-edit">
+                    <h3>Welcome to our Exercise Section &nbsp;!</h3>
+                    <h5>Welcome to our exercise section, where we believe in the power of movement to transform lives.
+                        Whether you're a seasoned gym-goer or just starting your fitness journey, our comprehensive
+                        exercise guides are designed to help you reach your goals and enjoy the process.</h5>
+                    <li>Detailed Exercise Descriptions, from classic moves to innovative workouts</li>
+                    <li>workout plans for every fitness level, designed to help you achieve specific goals such as
+                        weight loss, muscle gain, or overall fitness.</li>
+                    <li>Charts of specifc work out</li>
+                    <h5>Explore Our Categories</h5>
+                    <li>Strength Training: Build muscle and improve strength with our collection of strength training
+                        exercises.</li>
+                    <li>Take your leg workouts to the next level.</li>
+                    <li>Explore a range of exercises to target your chest muscles, including the pectoralis major and
+                        minor.</li>
+                    <li>Explore a variety of exercises to strengthen your core muscles, and more.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="EIB">
+            <div class="exerciseimg1">
+                <img src="img/abdominal.jpg" alt="">
+            </div>
+            <div class="exerciseimg2">
+                <img src="img/leg.jpg" alt="">
+            </div>
+        </div>
+        <div class="EIB2">
+            <div class="exerciseimg1">
+                <img src="img/strength.jpg" alt="">
+            </div>
+            <div class="exerciseimg2">
+                <img src="img/chest.jpg" alt="">
+            </div>
+        </div>
+        <div class="healthconsultant">
+            <div class="healthconsultantimg">
+               <img src="img/health consultznt.jpg" alt="">
+            </div>
+            <div class="healthconsultanttext">
+                <ul class="healthconsultanttxt">
+                    <h1> We provide online Health Consultant Services</h1>
+                    <li><b>Personalized Health Plans</b>: Receive customized health plans tailored to your individual goals and needs.</li>
+                    <li><b>Nutritional Guidance</b>: Get expert advice on nutrition and diet plans to support your health and wellness goals.</li>
+                    <li><b>Lifestyle Recommendations</b>: Receive recommendations on lifestyle changes that can improve your overall health and well-being.</li>
+                    <li><b>Fitness Plans</b>: Access fitness plans and exercise recommendations to help you stay active and fit.</li>
+                    <li><b>Fitness Plans</b>: Access fitness plans and exercise recommendations to help you stay active and fit.</li>
+                    <li><b>Wellness Coaching</b>: Benefit from ongoing support and motivation to help you achieve your health and wellness goals.</li>
+                </ul>
+            </div>
+        </div>'
+        <div class="suppliment">
+            <img src="img/suppliments.jpg" alt="">
+            <!-- <div>Diet &#160;Plan</div> -->
+            <div class="supplimentbox">
+                <ul class="supplimenttext">
+                    <h3>We also provide information for the suppliments avalable at reasonable rates</h3>
+                    
+                </ul>
+            </div>
+        </div>
+        <!--  mid for navbar -->
+        <!-- <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness center</a></li>
+                <li><a href="#">Contact us</a></li>
+                <DIV class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </DIV>
+            </ul>
+
+        </div> -->
+
+        
+    </header>
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex">
+                <button class="toggle-btn" type="button">
+                    <i class="lni lni-grid-alt"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <a href="#">main menu</a>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-agenda"></i>
+                        <span>Diet plan</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                        <i class="lni lni-protection"></i>
+                        <span>Auth</span>
+                    </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Login</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Register</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
+                        <i class="lni lni-layout"></i>
+                        <span>ADVANCE FEATURE</span>
+                    </a>
+                    <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
+                                SEARCH
+                            </a>
+                            <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link"> Qyestion from AI</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Ask Health consultant</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-popup"></i>
+                        <span>Blogs</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-cog"></i>
+                        <span>Setting</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-link">
+                    <i class="lni lni-exit"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <div class="container">
+        <h1>Start your fitness journey here </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                Name : <input type="text" name="" placeholder="enter your name">
+                Phone Number : <input type="text" name="" placeholder="enter your Phone Number">
+                <!-- <div>
+                    Gender :Male <input type="radio" name="mygender"> FeMale <input type="radio" name="mygender"> Other <input
+                        type="radio" name="mygender">
+                </div> -->
+                Age : <input type="text" name="" placeholder="enter your age">
+                Gender :<input type="text" name="" placeholder="enter your gender">
+            </div>
+            <button class="btn3">Submit</button>
+            <div class="right">
+                <button class="btn">Call us now</button>
+                <button class="btn">Email us</button>
+                <button class="btn">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
